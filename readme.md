@@ -37,7 +37,7 @@ Because we're not paying Google $5 to "verify" it. The code is open-source - [ch
 
 ### 🐛 Found a bug?
 - Tweet at us [@webrizen](https://twitter.com/webrizen)  
-- Or email `help@revivehydration.com` with "BUG:" in the subject  
+- Or email `webrizen@gmail.com` with "BUG:" in the subject  
 
 ## 🫶 Support
 This is free, but if you want to:

@@ -1,8 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Revive Hydration - Advanced Water Reminder",
-  "version": "2.0",
+  "version": "1.0",
   "description": "Customizable water reminder with settings",
+  "author": "Webrizen",
+  "homepage_url": "http://revive-hydration.vercel.app",
+  "license": "MIT",
   "permissions": ["alarms", "storage"],
   "background": {
     "service_worker": "background.js"

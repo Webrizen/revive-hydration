@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time to Hydrate!</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 120, 215, 0.1);
+            padding: 2.5rem;
+            width: 320px;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        /* Water Drop Animation */
+        .water-glass {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: bounce 2s infinite, drip 3s infinite;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0369a1;
+        }
+        
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+            color: #334155;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #64748b;
+            margin: 1.5rem 0;
+            padding: 0.75rem;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #7dd3fc;
+        }
+        
+        /* Button Styles */
+        button {
+            background-color: #0ea5e9;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            box-shadow: 0 2px 10px rgba(14, 165, 233, 0.3);
+        }
+        
+        button:hover {
+            background-color: #0284c7;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes drip {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 400px) {
+            .container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="water-glass">💧</div>
+        <h1 id="reminderTitle">Time to Drink Water!</h1>
+        <p id="reminderMessage">Your body needs hydration to stay energized and focused.</p>
+        <p id="motivationalQuote" class="quote">"Water is the driving force of all nature." — Leonardo da Vinci</p>
+        <button id="snoozeButton">Snooze for 10 minutes</button>
+    </div>
+    <script src="reminder.js"></script>
+</body>
+</html>

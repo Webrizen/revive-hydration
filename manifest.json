@@ -5,7 +5,6 @@
   "description": "Customizable water reminder with settings",
   "author": "Webrizen",
   "homepage_url": "http://revive-hydration.vercel.app",
-  "license": "MIT",
   "permissions": ["alarms", "storage"],
   "background": {
     "service_worker": "background.js"
